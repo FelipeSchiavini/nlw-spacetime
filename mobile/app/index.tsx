@@ -1,17 +1,9 @@
-import { StatusBar } from "expo-status-bar";
-import { ImageBackground, Text, TouchableOpacity, View } from "react-native";
-import { BaiJamjuree_700Bold } from "@expo-google-fonts/bai-jamjuree";
-import {
-  useFonts,
-  Roboto_400Regular,
-  Roboto_700Bold,
-} from "@expo-google-fonts/roboto";
+import {  Text, TouchableOpacity, View } from "react-native";
 import { styled } from "nativewind";
 import { makeRedirectUri, useAuthRequest } from "expo-auth-session";
 import { useEffect } from "react";
 import * as SecureStore from "expo-secure-store";
 import { useRouter } from "expo-router";
-import blurBg from "../src/assets/bg-blur.png";
 import Stripes from "../src/assets/stripes.svg";
 import Logo from "../src/assets/logo.svg";
 
@@ -29,12 +21,6 @@ const discovery = {
 
 export default function App() {
   const router = useRouter();
-
-  const [hasLoadedFonts] = useFonts({
-    Roboto_400Regular,
-    Roboto_700Bold,
-    BaiJamjuree_700Bold,
-  });
 
   const [, response, signInWithGitHub] = useAuthRequest(
     {
@@ -65,20 +51,13 @@ export default function App() {
     }
   }, [response]);
 
-  if (!hasLoadedFonts) {
-    return null;
-  }
+
 
   return (
-    <ImageBackground
-      source={blurBg}
-      className="relative flex-1 bg-gray-900 px-8 py-10"
-      imageStyle={{
-        position: "absolute",
-        left: "-100%",
-      }}
+    <View
+      className="relative flex-1 px-8 py-10"
+
     >
-      <StatusBar style="light" translucent />
       <StyledStrypes className="absolute left-2" />
       <View className="flex-1 items-center justify-center gap-6">
         <StlyedLogo />
@@ -107,6 +86,6 @@ export default function App() {
         {" "}
         🚀 Lets do our best with what we had
       </Text>
-    </ImageBackground>
+    </View>
   );
 }

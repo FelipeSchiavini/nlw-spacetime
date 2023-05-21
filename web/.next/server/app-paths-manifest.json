@@ -1,4 +1,5 @@
 {
   "/page": "app/page.js",
-  "/memories/new/page": "app/memories/new/page.js"
+  "/memories/new/page": "app/memories/new/page.js",
+  "/api/auth/callback/route": "app/api/auth/callback/route.js"
 }

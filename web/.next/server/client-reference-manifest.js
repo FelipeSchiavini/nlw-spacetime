@@ -794,6 +794,32 @@ self.__RSC_MANIFEST={
         "async": false
       }
     },
+    "(app-client)/./node_modules/next/dist/client/link.js": {
+      "*": {
+        "id": "(sc_client)/./node_modules/next/dist/client/link.js",
+        "name": "*",
+        "chunks": [
+          "app/memories/new/page:static/chunks/app/memories/new/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./node_modules/next/dist/client/link.js",
+        "name": "",
+        "chunks": [
+          "app/memories/new/page:static/chunks/app/memories/new/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./node_modules/next/dist/client/link.js",
+        "name": "default",
+        "chunks": [
+          "app/memories/new/page:static/chunks/app/memories/new/page.js"
+        ],
+        "async": false
+      }
+    },
     "(app-client)/./node_modules/next/dist/shared/lib/head.js": {
       "*": {
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
@@ -2734,6 +2760,54 @@ self.__RSC_MANIFEST={
       "name": "default",
       "chunks": [
         "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/home/felipe/Documentos/spacetime/web/node_modules/next/dist/client/link.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "*",
+      "chunks": [
+        "app/memories/new/page:static/chunks/app/memories/new/page.js"
+      ],
+      "async": false
+    },
+    "/home/felipe/Documentos/spacetime/web/node_modules/next/dist/esm/client/link.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "*",
+      "chunks": [
+        "app/memories/new/page:static/chunks/app/memories/new/page.js"
+      ],
+      "async": false
+    },
+    "/home/felipe/Documentos/spacetime/web/node_modules/next/dist/client/link.js#": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "",
+      "chunks": [
+        "app/memories/new/page:static/chunks/app/memories/new/page.js"
+      ],
+      "async": false
+    },
+    "/home/felipe/Documentos/spacetime/web/node_modules/next/dist/esm/client/link.js#": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "",
+      "chunks": [
+        "app/memories/new/page:static/chunks/app/memories/new/page.js"
+      ],
+      "async": false
+    },
+    "/home/felipe/Documentos/spacetime/web/node_modules/next/dist/client/link.js#default": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "default",
+      "chunks": [
+        "app/memories/new/page:static/chunks/app/memories/new/page.js"
+      ],
+      "async": false
+    },
+    "/home/felipe/Documentos/spacetime/web/node_modules/next/dist/esm/client/link.js#default": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "default",
+      "chunks": [
+        "app/memories/new/page:static/chunks/app/memories/new/page.js"
       ],
       "async": false
     },
